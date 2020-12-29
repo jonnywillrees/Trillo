@@ -12,6 +12,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- HEADER -->
       <header class="header">
         <div class="logo">
           <img src="img/logo.png" alt="Trillo logo" class="logo__img" />
@@ -41,7 +42,9 @@
           </div>
         </nav>
       </header>
+      <!-- CONTENT -->
       <div class="content">
+        <!-- SIDEBAR -->
         <nav class="sidebar">
           <ul class="sidebar__list">
             <li class="sidebar__item sidebar__item--active">
@@ -71,7 +74,9 @@
           </ul>
           <div class="legal">&copy; 2020 by Trillo. All rights reserved.</div>
         </nav>
+        <!-- HOTEL VIEWPORT -->
         <main class="hotel-viewport">
+          <!-- GALLERY -->
           <div class="gallery">
             <figure class="gallery__item">
               <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
@@ -83,30 +88,34 @@
               <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
             </figure>
           </div>
+          <!-- HOTEL VIEWPORT HEADING -->
+          <div class="overview">
+            <h1 class="overview__title">Hotel Las Palmas</h1>
 
-          <div class="heading">
-            <h1 class="heading__title">Hotel Las Palmas</h1>
-
-            <div class="heading__stars">
-              <svg class="heading__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-              <svg class="heading__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-              <svg class="heading__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-              <svg class="heading__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-              <svg class="heading__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+            <div class="overview__stars">
+              <svg class="overview__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+              <svg class="overview__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+              <svg class="overview__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+              <svg class="overview__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+              <svg class="overview__icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
             </div>
 
-            <div class="heading__location">
-              <svg class="heading__icon-location"><use xlink:href="img/sprite.svg#icon-location-pin"></use></svg>
+            <div class="overview__location">
+              <svg class="overview__icon-location"><use xlink:href="img/sprite.svg#icon-location-pin"></use></svg>
               <button class="btn-inline">Albufeira, Portugal</button>
             </div>
 
-            <div class="heading__rating">
-              <div class="heading__rating-score">8.6</div>
-              <div class="heading__rating-votes">429 votes</div>
+            <div class="overview__rating">
+              <div class="overview__rating-score">8.6</div>
+              <div class="overview__rating-votes">429 votes</div>
             </div>
           </div>
-
+          <!-- 
+            DETAIL which contains HOTEL VIEWPORT - DESCRIPTION on the left
+            and USER REVIEWS on the right
+          -->
           <div class="detail">
+            <!-- DESCRIPTION -->
             <div class="description">
               <p class="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione
@@ -136,7 +145,39 @@
                 </div>
               </div>
             </div>
-            <div class="user-reviews">User Reviews</div>
+            <!-- USER REVIEWS -->
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi,
+                  totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-1.jpg" alt="User photo" class="review__user-photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Nick Smith</p>
+                    <p class="review__user-date">Feb 23rd, 2018</p>
+                  </div>
+                  <div class="review__user-rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img src="img/user-2.jpg" alt="User photo" class="review__user-photo" />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Mary Thomas</p>
+                    <p class="review__user-date">Oct 2nd, 2016</p>
+                  </div>
+                  <div class="review__user-rating">9.3</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline">See all <span>&rarr;</span></button>
+            </div>
           </div>
         </main>
       </div>
