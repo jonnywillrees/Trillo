@@ -1,75 +1,65 @@
-.header {
-  font-size: 1.4rem;
-  height: 7rem;
-  background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+////////////////////////
+// LOGO
+.logo {
+  height: 4.25rem;
+  margin-left: 2rem;
+
+  &__img {
+    height: 100%;
+    display: block;
+  }
+}
+
+////////////////////////
+// SEARCH
+.search {
+  flex: 0 0 40%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 
-  ////////////////////////
-  // LOGO
-  .logo {
-    height: 4.25rem;
-    margin-left: 2rem;
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.7rem 2rem;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3rem;
 
-    &__img {
-      height: 100%;
-      display: block;
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
     }
   }
 
-  ////////////////////////
-  // SEARCH
-  .search {
-    flex: 0 0 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__button {
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s;
 
-    &__input {
-      font-family: inherit;
-      font-size: inherit;
-      color: inherit;
-      background-color: var(--color-grey-light-2);
-      border: none;
-      border-radius: 3rem;
-      padding: 0.7rem 2rem;
-      width: 90%;
-      transition: all 0.2s;
-      margin-right: -3rem;
-
-      &:focus {
-        outline: none;
-        width: 100%;
-        background-color: var(--color-grey-light-3);
-      }
-
-      &::-webkit-input-placeholder {
-        font-weight: 100;
-        color: var(--color-grey-light-4);
-      }
+    &:focus {
+      outline: none;
     }
 
-    &__button {
-      border: none;
-      background-color: transparent;
-      transition: all 0.2s;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:active {
-        transform: translateY(2px);
-      }
+    &:active {
+      transform: translateY(2px);
     }
+  }
 
-    &__icon {
-      height: 2rem;
-      width: 2rem;
-      fill: var(--color-grey-dark-3);
-    }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
