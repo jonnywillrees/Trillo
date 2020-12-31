@@ -5,6 +5,12 @@
     font-size: 3rem;
     padding: 1.5rem 3rem;
     letter-spacing: 1px;
+
+    @media only screen and (max-width: $breakpoint-extra-small) {
+      font-size: 2.5rem;
+      letter-spacing: 0;
+      padding: 1rem;
+    }
   }
 
   &__stars {
@@ -17,6 +23,11 @@
     width: 2rem;
     height: 2rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $breakpoint-extra-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__location {
@@ -38,15 +49,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $breakpoint-extra-small) {
+      padding: 0 1rem;
+    }
   }
 
   &__rating-score {
     font-size: 2.25rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $breakpoint-extra-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-votes {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     margin-top: -0.3rem;
   }

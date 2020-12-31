@@ -1,5 +1,5 @@
 /*
-CSS VARIABLES INSTEAD OF SASS VARIABLES
+CSS VARIABLES
 */
 
 // root psuedo class is essentially like the <html> selector, but with a highter specificity
@@ -22,3 +22,14 @@ CSS VARIABLES INSTEAD OF SASS VARIABLES
 
   --line: 1px solid var(--color-grey-light-2);
 }
+
+/*
+SASS VARIABLES
+*/
+
+$breakpoint-largest: 75em; // 1200px / 16px = 75
+$breakpoint-large: 68.75em; // 1100px / 16px = 68.75
+$breakpoint-medium: 56.25em; // 900px / 16px = 56.25
+$breakpoint-small: 43.75em; // 700px / 16px = 43.75
+$breakpoint-extra-small: 37.5em; // 600px / 16px = 37.5
+$breakpoint-smallest: 31.25em; // 500px / 16px = 31.25

@@ -3,10 +3,19 @@
     list-style: none;
     font-size: 1.4rem;
     margin-top: 3.5rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      display: flex;
+      margin-top: 0;
+    }
   }
 
   &__item {
     position: relative;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      flex: 1;
+    }
 
     &::before {
       content: "";
@@ -23,6 +32,10 @@
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $breakpoint-medium) {
+        margin-bottom: 0;
+      }
     }
 
     &:hover::before,
@@ -47,6 +60,16 @@
       align-items: center;
       position: relative;
       z-index: 2;
+
+      @media only screen and (max-width: $breakpoint-medium) {
+        justify-content: center;
+        padding: 1.5rem 2rem;
+        line-height: 1;
+      }
+
+      @media only screen and (max-width: $breakpoint-extra-small) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -55,9 +78,13 @@
     height: 2rem;
     margin-right: 1.5rem;
     fill: currentColor;
-  }
 
-  &__text {
+    @media only screen and (max-width: $breakpoint-extra-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
   }
 
   .legal {
@@ -65,5 +92,9 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      display: none;
+    }
   }
 }
